@@ -3,11 +3,11 @@ var path = require("path");
 var log = console.log;
 
 var fileExt = ""; 		//file extension given by the user
-var searchText = "";	//text to search in file content, given by user
+var searchText = "";		//text to search in file content, given by user
 var direcAllFileList = [];	//all file list in the main directory ans sub folders
 var reqFileExtList = [];	//all requested file list by file extension given by the user
 var reqFileList = [];		//all requested file list that contains the given text and
-							//have the requested file extention(the output result)
+				//have the requested file extention(the output result)
 
 function printArray(arr) {
 	for(let i = 0; i < arr.length; i += 1) {
@@ -73,4 +73,3 @@ createDirecAllFileList(__dirname);
 createRequiredFileList();
 searchTextInFileContent();
 printArray(reqFileList);
-
