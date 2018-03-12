@@ -52,7 +52,6 @@ function createRequiredFileList() {
 	}
 }
 
-
 //searching the given text in file content. searches on  the formed reqested file list extension
 function searchTextInFileContent() {
 	for(let i = 0; i < reqFileExtList.length; i += 1) {
